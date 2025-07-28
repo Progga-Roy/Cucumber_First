@@ -4,6 +4,7 @@ Feature: Login feature
     Given User should be on the login page
     When User enter valid username
     And User enter valid password
+    And User click on the remember me check box
     And User click on the login button
     Then User should successfully logged in
     But User should not see the login button

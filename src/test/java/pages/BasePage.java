@@ -42,9 +42,9 @@ public class BasePage {
        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-//    public void addScreenShot(String name){
-//        Allure.addAttachment(name,new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES)));
-//    }
+    public void addScreenShot(String name){
+        Allure.addAttachment(name,new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES)));
+    }
 
 
 }
