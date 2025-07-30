@@ -1,6 +1,7 @@
 package testcases;
 
-import io.qameta.allure.Description;
+
+import jdk.jfr.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.MainPage;
@@ -12,7 +13,7 @@ public class TestMainPages extends DriverSetUp {
     @Description("Validate Title")
     public void TestMainPageTitle(){
       mainPage.loadAPage(mainPage.url);
-      mainPage.addScreenShot("Main page");
+//      mainPage.addScreenShot("Main page");
       Assert.assertEquals(mainPage.getPageTitle(),mainPage.title);
 
     }
