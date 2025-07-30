@@ -10,7 +10,6 @@ import utilities.DataSet;
 import utilities.DriverSetUp;
 
 public class TestLoginPage extends DriverSetUp {
-    private static final Logger log = LoggerFactory.getLogger(TestLoginPage.class);
     MainPage mainPage = new MainPage();
     LoginPage login_page = new LoginPage();
     @Test(description ="Test Login with Valid Credentials")
